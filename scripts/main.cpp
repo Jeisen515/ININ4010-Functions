@@ -60,8 +60,7 @@ float geometric_mean(vector<float> dataVector){ // Calculates the geometric mean
     for(int i = 0; i < dataVector.size(); i++){
         product *= dataVector[i];
     }
-    return pow(product, 1/dataVector.size()+1);
-}
+    return pow(product, 1/dataVector.size);
 
 float harmonic_mean(vector<float> dataVector){ // Calculates the harmonic mean of a vector of integers
     
